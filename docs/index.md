@@ -5,6 +5,6 @@ New to **Durham, North Carolina**? This guide collects step-by-step checklists, 
 > ⚠️ Always double-check official sites for the latest forms, fees, and office hours. Government processes change.
 
 ## How to use this guide
-- Start with the **Starter Topics** in the sidebar.
+- Start the **Starter Topics** in the sidebar.
 - Each page has a **Checklist**, **Documents you need**, **Typical timeline**, and **Common mistakes**.
 - Open an **Issue** if something is unclear, or send a **Pull Request** to improve a page.
