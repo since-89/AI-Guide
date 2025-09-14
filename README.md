@@ -1,6 +1,6 @@
-# Durham Move Guide (Starter)
+# MOVING TO USA GUIDE VIA J1 & J2
 
-A public, community-friendly guide for people moving to Durham, North Carolina (EAD, driving license, groceries, etc.) built entirely with **GitHub** and published via **GitHub Pages** using **MkDocs + Material**.
+A public, community-friendly guide for people moving to the USA on J1/J2 visa category (Socia Secutiry, Accomodation, Commute, EAD, driving license, groceries, etc.) built entirely with **GitHub** and published via **GitHub Pages** using **MkDocs + Material**.
 
 ## Quick start
 1. **Create a new GitHub repo** named `durham-move-guide` (public or private).
@@ -48,7 +48,7 @@ git push -u origin main
 
 # regular workflow
 git add -A
-git commit -m "Update EAD page with I-765 tips"
+git commit -m "Update EAD page with I-765 tips" /* Example you are pushing file for EAD application */
 git push
 
 # create a feature branch
