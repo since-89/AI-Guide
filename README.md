@@ -1,4 +1,4 @@
-# MOVING TO USA GUIDE VIA J1 & J2
+# MOVING TO USA GUIDE FOR J1 & J2 - VISA HOLDERS
 
 A public, community-friendly guide for people moving to the USA on J1/J2 visa category (Socia Secutiry, Accomodation, Commute, EAD, driving license, groceries, etc.) built entirely with **GitHub** and published via **GitHub Pages** using **MkDocs + Material**.
 
