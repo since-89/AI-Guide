@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Protected Documents</title>
+  <style>
+    body { font-family: Arial; text-align: center; margin-top: 80px; }
+    img { max-width: 90%; margin: 20px 0; }
+  </style>
+</head>
+<body>
+
+<h2>Employment Documents</h2>
+
+<div id="lock">
+  <p>Enter access password</p>
+  <input type="password" id="pwd" />
+  <button onclick="unlock()">View</button>
+</div>
+
+<div id="content" style="display:none;">
+  <img src="images/visa.jpg" />
+  <img src="images/work_card.jpg" />
+</div>
+
+<script>
+  function unlock() {
+    if (document.getElementById("pwd").value === "YOUR_PASSWORD") {
+      document.getElementById("lock").style.display = "none";
+      document.getElementById("content").style.display = "block";
+    } else {
+      alert("Wrong password");
+    }
+  }
+</script>
+
+</body>
+</html>
