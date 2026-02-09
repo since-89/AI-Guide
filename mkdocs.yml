@@ -18,12 +18,16 @@ nav:
   - Start Here:
       - Home: index.md
       - EAD (Work Authorization): ead.md
+      - Portfolio: portfolio.md
 
   - Life Setup:
       - Driver's License: dmv-license.md
       - Groceries: groceries.md
 
   - Contributing: contributing.md
+
+extra_css:
+  - stylesheets/portfolio.css
 
 markdown_extensions:
   - admonition
@@ -35,3 +39,4 @@ markdown_extensions:
 
 plugins:
   - search
+

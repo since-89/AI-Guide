@@ -1,0 +1,51 @@
+/* Uses Material theme variables so it matches your blog */
+.pf-hero {
+  padding: 1.25rem 1.25rem;
+  border-radius: 1rem;
+  background: color-mix(in srgb, var(--md-default-fg-color) 6%, transparent);
+  margin-bottom: 1rem;
+}
+
+.pf-subtitle { margin-top: .25rem; opacity: .85; }
+.pf-cta { display: flex; gap: .5rem; flex-wrap: wrap; margin: .75rem 0; }
+
+.pf-badges { display: flex; gap: .5rem; flex-wrap: wrap; }
+.pf-badge {
+  padding: .2rem .55rem;
+  border-radius: 999px;
+  font-size: .75rem;
+  background: color-mix(in srgb, var(--md-default-fg-color) 10%, transparent);
+}
+
+.pf-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .75rem;
+}
+
+.pf-card {
+  padding: .9rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid color-mix(in srgb, var(--md-default-fg-color) 12%, transparent);
+  background: var(--md-default-bg-color);
+}
+
+.pf-card h3 { margin-top: 0; margin-bottom: .5rem; }
+.pf-card ul { margin: 0; padding-left: 1.1rem; }
+
+.pf-skillgrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .75rem;
+}
+
+.pf-skill {
+  padding: .85rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid color-mix(in srgb, var(--md-default-fg-color) 12%, transparent);
+}
+
+@media (max-width: 900px) {
+  .pf-grid { grid-template-columns: 1fr; }
+  .pf-skillgrid { grid-template-columns: 1fr; }
+}
