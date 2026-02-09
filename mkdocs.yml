@@ -1,23 +1,30 @@
-site_name: A.I (America-India) Living Guide!
-site_description: Practical, step-by-step help for moving to Durham, NC (EAD, driving, groceries, housing, and more).
-site_url: https://example.com
-repo_url: https://github.com/your-username/durham-move-guide
+site_name: A.I (America–India) Living Guide
+site_description: A practical J1/J2 survival guide for moving to the U.S. — paperwork, setup, and everyday life.
+site_url: https://since-89.github.io/AI-Guide/
+repo_url: https://github.com/since-89/AI-Guide
+repo_name: since-89/AI-Guide
+
 theme:
   name: material
+  language: en
   features:
-    - navigation.sections
-    - navigation.top
+    - navigation.tabs
+    - navigation.tabs.sticky
     - search.suggest
     - search.highlight
     - content.code.copy
-  language: en
+
 nav:
-  - Home: index.md
-  - Starter Topics:
+  - Start Here:
+      - Home: index.md
       - EAD (Work Authorization): ead.md
-      - NC Driver's License: dmv-license.md
-      - Groceries & Indian Stores: groceries.md
+
+  - Life Setup:
+      - Driver's License: dmv-license.md
+      - Groceries: groceries.md
+
   - Contributing: contributing.md
+
 markdown_extensions:
   - admonition
   - toc:
@@ -25,5 +32,6 @@ markdown_extensions:
   - footnotes
   - def_list
   - attr_list
+
 plugins:
   - search
