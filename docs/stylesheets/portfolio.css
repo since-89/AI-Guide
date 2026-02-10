@@ -67,6 +67,16 @@
   box-shadow: 0 8px 22px rgba(0,0,0,.10);
 }
 
+.pf-top-photo {
+  display: block;
+}
+
+.pf-top-photo img {
+  max-width: 100%;
+}
+
+
+
 /* One responsive block for everything */
 @media (max-width: 900px) {
   .pf-grid { grid-template-columns: 1fr; }
@@ -82,3 +92,4 @@
     justify-self: center;
   }
 }
+

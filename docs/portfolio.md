@@ -6,22 +6,22 @@ hide:
 
 <div class="pf-top">
 
-<div class="pf-top-text">
+  <div class="pf-top-text">
+    <h1>Dr. Pravin D. Suryawanshi, Ph.D.</h1>
 
-# Dr. Pravin D. Suryawanshi, Ph.D.
+    <p><strong>Optimization Scientist | Operations Research &amp; Decision Intelligence</strong><br/>
+    Large-Scale Supply Chain, Logistics &amp; Network Optimization</p>
 
-**Optimization Scientist | Operations Research & Decision Intelligence**  
-Large-Scale Supply Chain, Logistics & Network Optimization
+    <ul>
+      <li>📍 Durham, NC (USA)</li>
+      <li>📧 <a href="mailto:work.pravinsuryawanshi@gmail.com">work.pravinsuryawanshi@gmail.com</a></li>
+      <li>🔗 <a href="https://www.linkedin.com/in/pravin-suryawanshi-ph-d-9601b733/" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul>
+  </div>
 
-- 📍 Durham, NC (USA)  
-- 📧 [work.pravinsuryawanshi@gmail.com](mailto:work.pravinsuryawanshi@gmail.com)  
-- 🔗 [LinkedIn](https://www.linkedin.com/in/pravin-suryawanshi-ph-d-9601b733/)  
-
-</div>
-
-<div class="pf-top-photo">
-  <img src="/AI-Guide/assets/headshot.jpg" alt="Pravin Suryawanshi headshot" />
-</div>
+  <div class="pf-top-photo">
+    <img src="/AI-Guide/assets/headshot.jpg" alt="Pravin Suryawanshi headshot" />
+  </div>
 
 </div>
 
