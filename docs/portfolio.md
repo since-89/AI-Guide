@@ -6,13 +6,11 @@ hide:
 
 # Dr. Pravin D. Suryawanshi, Ph.D.
 
-Senior / Lead Operations Research Scientist  
-Supply Chain • Logistics • Network Optimization
+Optimization Scientist | Operations Research & Decision Intelligence | Large-Scale Supply Chain, Logistics & Network Optimization
 
 - 📍 Durham, NC (USA)
 - 📧 [work.pravinsuryawanshi@gmail.com](mailto:work.pravinsuryawanshi@gmail.com)
 - 🔗 [LinkedIn][def]
-- 📄 [CV / Resume (PDF)](/assets/SuryawanshiPravin_PhD.pdf)
 
 ---
 
@@ -45,14 +43,15 @@ into production tools that improve cost, utilization, and planning efficiency.
 ### Jio Platforms — Lead Data Scientist (Operations Research)
 - Assortment planning, routing, and network optimization for retail/logistics
 - Patented scheduling optimization work (rail rake allocation)
+- vehicle routing for retail products (google api, genetic algorithms, business constraints)
 
 ---
 
 ## Education
 
-- **Ph.D.** — Supply Chain Network Optimization, IIT Bombay  
-- **M.Tech** — Industrial Engineering & Management, NIT Calicut  
-- **B.E.** — E&TC Engineering, Mumbai University
+- **Ph.D.** — Supply Chain Network Optimization, IIT Bombay  (2022)
+- **M.Tech** — Industrial Engineering & Management, NIT Calicut  (2014)
+- **B.E.** — E&TC Engineering, Mumbai University (2011)
 
 ---
 
@@ -93,11 +92,3 @@ You can also find the full list of my publications on my
 
 11. **Suryawanshi, P.**, Gaikwad, S., Kumar, A., Patlolla, A., & Jayakumar, S. K. (2023). *A hybrid Bayesian-genetic algorithm based hyperparameter optimization of an LSTM network for demand forecasting of retail products.* In **IJCCI** (pp. 230–237).
 
-
-## Contact
-
-Best way to reach me:  
-📧 [work.pravinsuryawanshi@gmail.com](mailto:work.pravinsuryawanshi@gmail.com)
-
-
-[def]: https://www.linkedin.com/in/pravin-suryawanshi-ph-d-9601b733/
