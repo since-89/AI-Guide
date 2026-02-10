@@ -1,7 +1,8 @@
-<div class="pf-top">
-
-  <div class="pf-top-text">
-
+---
+title: Profile
+hide:
+  - toc
+---
 
 # Dr. Pravin D. Suryawanshi, Ph.D.
 
@@ -10,15 +11,6 @@ Optimization Scientist | Operations Research & Decision Intelligence | Large-Sca
 - 📍 Durham, NC (USA)
 - 📧 [work.pravinsuryawanshi@gmail.com](mailto:work.pravinsuryawanshi@gmail.com)
 - 🔗 [LinkedIn][def]
-
-</div>
-
-  <div class="pf-top-photo">
-    <img src="/AI-Guide/docs/assets/headshot.jpg" alt="Pravin Suryawanshi headshot" />
-  </div>
-
-</div>
-
 
 ---
 
