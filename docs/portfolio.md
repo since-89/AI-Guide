@@ -4,13 +4,26 @@ hide:
   - toc
 ---
 
+<div class="pf-top">
+
+<div class="pf-top-text">
+
 # Dr. Pravin D. Suryawanshi, Ph.D.
 
-Optimization Scientist | Operations Research & Decision Intelligence | Large-Scale Supply Chain, Logistics & Network Optimization
+**Optimization Scientist | Operations Research & Decision Intelligence**  
+Large-Scale Supply Chain, Logistics & Network Optimization
 
-- 📍 Durham, NC (USA)
-- 📧 [work.pravinsuryawanshi@gmail.com](mailto:work.pravinsuryawanshi@gmail.com)
-- 🔗 [LinkedIn][https://www.linkedin.com/in/pravin-suryawanshi-ph-d-9601b733/]
+- 📍 Durham, NC (USA)  
+- 📧 [work.pravinsuryawanshi@gmail.com](mailto:work.pravinsuryawanshi@gmail.com)  
+- 🔗 [LinkedIn](https://www.linkedin.com/in/pravin-suryawanshi-ph-d-9601b733/)  
+
+</div>
+
+<div class="pf-top-photo">
+  <img src="/AI-Guide/assets/headshot.jpg" alt="Pravin Suryawanshi headshot" />
+</div>
+
+</div>
 
 ---
 
