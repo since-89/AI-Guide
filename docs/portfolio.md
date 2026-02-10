@@ -1,95 +1,71 @@
 ---
-title: Portfolio
+title: Profile
 hide:
   - toc
 ---
 
-<div class="pf-hero">
-  <div>
-    <h1>Dr. Pravin D. Suryawanshi, Ph.D.</h1>
-    <p class="pf-subtitle">Senior / Lead Operations Research Scientist · Supply Chain, Logistics & Network Optimization</p>
+# Dr. Pravin D. Suryawanshi, Ph.D.
 
-    <div class="pf-cta">
-      <a class="md-button md-button--primary" href="mailto:work.pravinsuryawanshi@gmail.com">Email</a>
-      <a class="md-button" href="https://www.linkedin.com/in/pravin-suryawanshi-ph-d-9601b733/" target="_blank">LinkedIn</a>
-      <a class="md-button" href="/assets/SuryawanshiPravin_PhD.pdf" target="_blank">Resume (PDF)</a>
-    </div>
+Senior / Lead Operations Research Scientist  
+Supply Chain • Logistics • Network Optimization
 
-    <div class="pf-badges">
-      <span class="pf-badge">Python</span>
-      <span class="pf-badge">Gurobi</span>
-      <span class="pf-badge">OR-Tools</span>
-      <span class="pf-badge">MILP</span>
-      <span class="pf-badge">Network Optimization</span>
-    </div>
-  </div>
-</div>
+- 📍 Durham, NC (USA)
+- 📧 [work.pravinsuryawanshi@gmail.com](mailto:work.pravinsuryawanshi@gmail.com)
+- 🔗 [LinkedIn](https://www.linkedin.com/in/pravin-suryawanshi-ph-d-9601b733/)
+- 📄 [CV / Resume (PDF)](/assets/SuryawanshiPravin_PhD.pdf)
 
 ---
 
-## Recruiter Summary
-- Ph.D. (IIT Bombay) with **6+ years** of applied OR/optimization work
-- Built **production decision tools** used by ops/planning teams
-- Delivered measurable impact: utilization improvements, cost reduction, planning automation
+## About
+
+I am a Ph.D.-trained Operations Research professional with industry and research experience in building
+optimization-driven decision systems for real-world supply chain and logistics operations.
+
+My work focuses on translating mathematical models (LP/MILP, decomposition, routing, scheduling)
+into production tools that improve cost, utilization, and planning efficiency.
 
 ---
 
-## Featured Impact
-<div class="pf-grid">
+## Research / Industry Interests
 
-<div class="pf-card">
-  <h3>DP World — Workforce Assignment (MILP)</h3>
-  <ul>
-    <li>Reduced idle time ~25% and waiting ~35%</li>
-    <li>Modeled shifts, breaks, sequencing constraints</li>
-  </ul>
-</div>
-
-<div class="pf-card">
-  <h3>DP World — Vessel Planning Toolkit</h3>
-  <ul>
-    <li>Automated stowage + robust data pipeline</li>
-    <li>Projected ~65% labor-hour reduction</li>
-  </ul>
-</div>
-
-<div class="pf-card">
-  <h3>Jio — Assortment Optimization</h3>
-  <ul>
-    <li>10–15% profit uplift per business cycle</li>
-  </ul>
-</div>
-
-<div class="pf-card">
-  <h3>Jio — Routing / Network Optimization</h3>
-  <ul>
-    <li>10–15% transportation cost reduction</li>
-    <li>₹5 Crore INR savings via DC-store assignment</li>
-  </ul>
-</div>
-
-</div>
+- Large-scale optimization (LP/MILP) and decomposition methods
+- Supply chain network design and resilience
+- Scheduling and resource allocation (workforce, terminal ops)
+- Transportation, routing, and assignment optimization
+- Decision support systems: modeling → engineering → deployment
 
 ---
 
-## Skills
-<div class="pf-skillgrid">
-  <div class="pf-skill">
-    <h4>Optimization</h4>
-    <p>Gurobi, CPLEX, OR-Tools, Pyomo · LP/MILP · Benders/Column Generation</p>
-  </div>
-  <div class="pf-skill">
-    <h4>Engineering</h4>
-    <p>Python, SQL · FastAPI/Flask · Docker · Git/GitHub</p>
-  </div>
-  <div class="pf-skill">
-    <h4>Domains</h4>
-    <p>Supply Chain, Logistics, Ports · Scheduling · Transportation · Network Design</p>
-  </div>
-</div>
+## Experience (selected)
+
+### DP World — Senior Operations Research Specialist
+- Workforce assignment optimization (MILP) with measurable utilization gains
+- Automated vessel planning toolkit and data pipelines for planners
+
+### Jio Platforms — Lead Data Scientist (Operations Research)
+- Assortment planning, routing, and network optimization for retail/logistics
+- Patented scheduling optimization work (rail rake allocation)
 
 ---
 
-## Experience (short)
-- **DP World (Senior OR Specialist)** — Dubai
-- **Jio Platforms (Lead Data Scientist – OR)** — Mumbai
+## Education
+
+- **Ph.D.** — Supply Chain Network Optimization, IIT Bombay  
+- **M.Tech** — Industrial Engineering & Management, NIT Calicut  
+- **B.E.** — E&TC Engineering, Mumbai University
+
+---
+
+## Skills (focused)
+
+**Optimization:** Gurobi, CPLEX, OR-Tools, Pyomo  
+**Programming:** Python, SQL, R  
+**Engineering:** FastAPI/Flask/Django, Docker, Git/GitHub  
+**Data/ML:** Pandas, PySpark, scikit-learn, PyTorch
+
+---
+
+## Contact
+
+Best way to reach me:  
+📧 [work.pravinsuryawanshi@gmail.com](mailto:work.pravinsuryawanshi@gmail.com)
