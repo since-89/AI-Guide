@@ -49,3 +49,37 @@
   .pf-grid { grid-template-columns: 1fr; }
   .pf-skillgrid { grid-template-columns: 1fr; }
 }
+
+
+
+/* Adding photo ot my profile */
+
+/* Top profile layout */
+.pf-top {
+  display: grid;
+  grid-template-columns: 1fr 180px;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.pf-top-photo img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid color-mix(in srgb, var(--md-default-fg-color) 15%, transparent);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 900px) {
+  .pf-top {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .pf-top-photo {
+    order: -1;
+    justify-self: center;
+  }
+}
