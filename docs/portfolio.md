@@ -1,14 +1,4 @@
 <div class="pf-top">
-...
-</div>
-
----
-title: Profile
-hide:
-  - toc
----
-
-<div class="pf-top">
 
   <div class="pf-top-text">
 
@@ -24,7 +14,7 @@ Optimization Scientist | Operations Research & Decision Intelligence | Large-Sca
 </div>
 
   <div class="pf-top-photo">
-    <img src="/AI-Guide/docs/private/images/headshot.jpg" alt="Pravin Suryawanshi headshot" />
+    <img src="/AI-Guide/docs/assets/headshot.jpg" alt="Pravin Suryawanshi headshot" />
   </div>
 
 </div>
