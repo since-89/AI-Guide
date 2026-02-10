@@ -52,7 +52,7 @@
 .pf-top {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 170px; /* tighter than 1fr 190px */
-  gap: 0.75rem;                                 /* reduced spacing */
+  gap: 0.25rem;                                 /* reduced spacing */
   align-items: start;
   margin-bottom: 1.25rem;
 }
