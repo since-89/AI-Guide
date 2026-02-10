@@ -10,7 +10,7 @@ Optimization Scientist | Operations Research & Decision Intelligence | Large-Sca
 
 - 📍 Durham, NC (USA)
 - 📧 [work.pravinsuryawanshi@gmail.com](mailto:work.pravinsuryawanshi@gmail.com)
-- 🔗 [LinkedIn][def]
+- 🔗 [LinkedIn][https://www.linkedin.com/in/pravin-suryawanshi-ph-d-9601b733/]
 
 ---
 
