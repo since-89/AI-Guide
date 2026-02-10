@@ -11,7 +11,7 @@ Supply Chain • Logistics • Network Optimization
 
 - 📍 Durham, NC (USA)
 - 📧 [work.pravinsuryawanshi@gmail.com](mailto:work.pravinsuryawanshi@gmail.com)
-- 🔗 [LinkedIn](https://www.linkedin.com/in/pravin-suryawanshi-ph-d-9601b733/)
+- 🔗 [LinkedIn][def]
 - 📄 [CV / Resume (PDF)](/assets/SuryawanshiPravin_PhD.pdf)
 
 ---
@@ -68,7 +68,7 @@ into production tools that improve cost, utilization, and planning efficiency.
 ## Selected Publications
 
 You can also find the full list of my publications on my
-[Google Scholar profile] (https://scholar.google.com/citations?user=Zbq_Q30AAAAJ&hl=en&oi=ao)
+[Google Scholar profile](https://scholar.google.com/citations?user=Zbq_Q30AAAAJ&hl=en&oi=ao).
 
 
 1. **Suryawanshi, P.** & Dutta, P. (2022). *Optimization models for supply chains under risk, uncertainty, and resilience: A state-of-the-art review and future research directions.* **Transportation Research Part E: Logistics and Transportation Review, 157**, 102553.
@@ -98,3 +98,6 @@ You can also find the full list of my publications on my
 
 Best way to reach me:  
 📧 [work.pravinsuryawanshi@gmail.com](mailto:work.pravinsuryawanshi@gmail.com)
+
+
+[def]: https://www.linkedin.com/in/pravin-suryawanshi-ph-d-9601b733/
