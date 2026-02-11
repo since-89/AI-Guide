@@ -18,7 +18,7 @@ nav:
   - Start Here:
       - Home: index.md
       - EAD (Work Authorization): ead.md
-      - Portfolio: portfolio.md
+      - About: portfolio.md
 
   - Life Setup:
       - Driver's License: dmv-license.md
