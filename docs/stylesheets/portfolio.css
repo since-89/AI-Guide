@@ -89,3 +89,13 @@
     justify-self: center;
   }
 }
+
+
+/* =========================
+   Narrow container ONLY for Portfolio page
+   ========================= */
+.pf-page {
+  max-width: 1050px;      /* try 1050 first */
+  margin: 0 auto;         /* center it */
+}
+
