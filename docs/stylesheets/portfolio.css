@@ -52,7 +52,7 @@
 .pf-top {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 160px;  /* smaller photo column = less empty space */
-  gap: 0.5rem;                                  /* realistic spacing */
+  gap: 0.1rem;                                  /* realistic spacing */
   align-items: start;
   margin-bottom: 1.25rem;
 }
