@@ -5,8 +5,6 @@ hide:
 ---
 
 
-<div class="pf-page">
-
 <div class="pf-top">
 
   <div class="pf-top-text">
@@ -108,4 +106,3 @@ You can also find the full list of my publications on my
 
 11. **Suryawanshi, P.**, Gaikwad, S., Kumar, A., Patlolla, A., & Jayakumar, S. K. (2023). *A hybrid Bayesian-genetic algorithm based hyperparameter optimization of an LSTM network for demand forecasting of retail products.* In **IJCCI** (pp. 230–237).
 
-</div>

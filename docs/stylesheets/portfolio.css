@@ -51,7 +51,7 @@
    ========================= */
 .pf-top {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 160px;  /* smaller photo column = less empty space */
+  grid-template-columns: auto 160px;  /* smaller photo column = less empty space */
   gap: 0.1rem;                                  /* realistic spacing */
   align-items: start;
   margin-bottom: 1.25rem;
@@ -89,13 +89,3 @@
     justify-self: center;
   }
 }
-
-
-/* =========================
-   Narrow container ONLY for Portfolio page
-   ========================= */
-.pf-page {
-  max-width: 1050px;      /* try 1050 first */
-  margin: 0 auto;         /* center it */
-}
-
