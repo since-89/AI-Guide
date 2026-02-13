@@ -1,39 +1,46 @@
-/* Profile top section (text + headshot) */
-.md-typeset .pf-top {
-  display: inline-grid !important;      /* force shrink-wrap (prevents full-width stretch) */
-  grid-template-columns: auto 160px;
-  gap: 0.75rem;
-  align-items: start;
+/* Portfolio header (text + headshot) */
+.md-typeset .pf-header {
+  overflow: auto;           /* clears the float */
   margin-bottom: 1.25rem;
-  max-width: 100%;
 }
 
-.md-typeset .pf-top-photo {
-  justify-self: end;
-}
-
-.md-typeset .pf-top-photo img {
+.md-typeset .pf-headshot {
+  float: right;
   width: 160px;
   height: 160px;
+  margin-left: 16px;
+  margin-bottom: 8px;
+
+  border-radius: 14px;
   object-fit: cover;
   object-position: 50% 72%;
-  border-radius: 14px;
+
   border: 1px solid color-mix(in srgb, var(--md-default-fg-color) 15%, transparent);
   background: var(--md-default-bg-color);
   box-shadow: 0 6px 16px rgba(0,0,0,.08);
-  display: block;
+
+  display: block;           /* prevents inline spacing quirks */
 }
 
-/* Mobile */
+/* Clean up spacing in the header */
+.md-typeset .pf-header h1 {
+  margin-top: 0;
+}
+
+/* Mobile: stack image above */
 @media (max-width: 900px) {
-  .md-typeset .pf-top {
-    display: grid !important;           /* full width on mobile */
-    grid-template-columns: 1fr;
+  .md-typeset .pf-headshot {
+    float: none;
+    margin: 0 auto 12px auto;
+  }
+
+  .md-typeset .pf-header {
     text-align: center;
   }
 
-  .md-typeset .pf-top-photo {
-    order: -1;
-    justify-self: center;
+  .md-typeset .pf-header ul {
+    display: inline-block;
+    text-align: left;
+    margin: 0;
   }
 }
