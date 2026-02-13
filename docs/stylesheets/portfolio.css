@@ -9,8 +9,8 @@
 
 /* Make sure image never looks bigger than the text block */
 .md-typeset .pf-hero-photo{
-  width: 140px;
-  height: 140px;
+  width: 80px;
+  height: 80px;
   flex: 0 0 140px;          /* fixed size column */
   border-radius: 14px;
   object-fit: cover;
