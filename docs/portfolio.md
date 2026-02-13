@@ -3,20 +3,23 @@ title: Profile
 hide:
   - toc
 ---
+<div class="pf-hero">
 
-<div class="pf-header">
-  <img class="pf-headshot" src="/AI-Guide/assets/headshot.jpg" alt="Pravin Suryawanshi headshot" />
+  <img class="pf-hero-photo" src="/AI-Guide/assets/headshot.jpg" alt="Pravin Suryawanshi headshot" />
 
-  <h1>Dr. Pravin D. Suryawanshi, Ph.D.</h1>
+  <div class="pf-hero-text">
+    <h1>Dr. Pravin D. Suryawanshi, Ph.D.</h1>
 
-  <p><strong>Optimization Scientist | Operations Research &amp; Decision Intelligence</strong><br/>
-  Large-Scale Supply Chain, Logistics &amp; Network Optimization</p>
+    <p><strong>Optimization Scientist | Operations Research &amp; Decision Intelligence</strong><br/>
+    Large-Scale Supply Chain, Logistics &amp; Network Optimization</p>
 
-  <ul>
-    <li>📍 Durham, NC (USA)</li>
-    <li>📧 <a href="mailto:work.pravinsuryawanshi@gmail.com">work.pravinsuryawanshi@gmail.com</a></li>
-    <li>🔗 <a href="https://www.linkedin.com/in/pravin-suryawanshi-ph-d-9601b733/" target="_blank" rel="noopener">LinkedIn</a></li>
-  </ul>
+    <ul>
+      <li>📍 Durham, NC (USA)</li>
+      <li>📧 <a href="mailto:work.pravinsuryawanshi@gmail.com">work.pravinsuryawanshi@gmail.com</a></li>
+      <li>🔗 <a href="https://www.linkedin.com/in/pravin-suryawanshi-ph-d-9601b733/" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul>
+  </div>
+
 </div>
 
 ---
