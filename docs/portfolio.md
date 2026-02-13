@@ -4,10 +4,9 @@ hide:
   - toc
 ---
 
+  <div class="pf-header">
+    <img class="pf-headshot" src="/AI-Guide/assets/headshot.jpg" alt="Pravin Suryawanshi headshot" />
 
-<div class="pf-top">
-
-  <div class="pf-top-text">
     <h1>Dr. Pravin D. Suryawanshi, Ph.D.</h1>
 
     <p><strong>Optimization Scientist | Operations Research &amp; Decision Intelligence</strong><br/>
@@ -19,12 +18,6 @@ hide:
       <li>🔗 <a href="https://www.linkedin.com/in/pravin-suryawanshi-ph-d-9601b733/" target="_blank" rel="noopener">LinkedIn</a></li>
     </ul>
   </div>
-
-  <div class="pf-top-photo">
-    <img src="/AI-Guide/assets/headshot.jpg" alt="Pravin Suryawanshi headshot" />
-  </div>
-
-</div>
 
 ---
 
