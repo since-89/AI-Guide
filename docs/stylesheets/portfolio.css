@@ -2,13 +2,14 @@
 .md-typeset .pf-header {
   overflow: auto;           /* clears the float */
   margin-bottom: 1.25rem;
+  max-width: 900px;
 }
 
 .md-typeset .pf-headshot {
-  float: right;
+  float: left;
   width: 150px;
   height: 150px;
-  margin-left: 10px;
+  margin-left: 16px;
   margin-bottom: 8px;
 
   border-radius: 14px;
@@ -31,6 +32,7 @@
 @media (max-width: 900px) {
   .md-typeset .pf-headshot {
     float: none;
+    display: block;
     margin: 0 auto 12px auto;
   }
 
