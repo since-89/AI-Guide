@@ -1,7 +1,7 @@
 /* Flex header: predictable, no weird gaps */
 .md-typeset .pf-hero{
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 24px;                /* space between photo and text */
   max-width: 980px;         /* keeps header compact */
   margin-bottom: 1.5rem;
