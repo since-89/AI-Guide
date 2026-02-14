@@ -9,9 +9,9 @@
 
 /* Make sure image never looks bigger than the text block */
 .md-typeset .pf-hero-photo{
-  width: 1000px;
+  width: 120px;
   height: 120px;
-  flex: 0 0 140px;          /* fixed size column */
+  flex: 0 0 120px;          /* fixed size column */
   border-radius: 14px;
   object-fit: cover;
   object-position: 50% 72%;
@@ -46,3 +46,5 @@
     margin: 0;
   }
 }
+
+

@@ -8,8 +8,8 @@ hide:
   <img class="pf-hero-photo" src="/AI-Guide/assets/headshot.jpg" alt="Pravin Suryawanshi headshot" />
 
   <div class="pf-hero-text">
-    <h1>Dr. Pravin D. Suryawanshi, Ph.D.</h1>
 
+    <h1>Dr. Pravin D. Suryawanshi, Ph.D.</h1>
     <p><strong>Optimization Scientist | Operations Research &amp; Decision Intelligence</strong><br/>
     Large-Scale Supply Chain, Logistics &amp; Network Optimization</p>
 
