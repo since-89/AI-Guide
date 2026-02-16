@@ -1,145 +1,190 @@
-# Blending Optimization: Maximizing Profit Through Linear Programming
 
-Blending optimization is a mathematical approach used to determine the most cost-effective way to combine raw materials into final products while meeting quality specifications and operational constraints.
+# Blending Optimization: Linear Programming for Product Mix Maximization
 
-It plays a critical role in industries such as:
+Blending optimization determines the optimal mixture of raw components to produce finished products that:
 
-- Oil & Gas
-- Food Processing
-- Agriculture
-- Mining
-- Chemicals
-- Manufacturing
+- Meet quality specifications  
+- Satisfy demand  
+- Maximize profit  
+- Respect operational constraints  
 
-In this case study, we explore how **Linear Programming (LP)** can optimize crude blending operations to maximize profitability.
+Common in:
 
----
-
-## 🏭 Problem Overview
-
-In crude blending operations:
-
-- Multiple raw components are available
-- Each component has cost and quality attributes
-- Final products must meet strict quality standards
-- Storage and flow capacities are limited
-- Demand must be satisfied
-
-The objective is:
-
-> **Maximize Net Profit = Product Revenue − Component Cost**
+- Oil refining  
+- Chemicals  
+- Food production  
+- Mining  
+- Energy  
 
 ---
 
-## 🧠 Modeling Framework
+# 1️⃣ Problem Definition
 
-### Time Representation
-The scheduling horizon is divided into discrete time slots to:
+Let:
 
-- Track blending activity
-- Manage inventories
-- Control product switching
-- Monitor storage levels
+- \( i \in I \) = set of raw components  
+- \( j \in J \) = set of final products  
+- \( t \in T \) = time periods  
 
----
+Parameters:
 
-## 🔧 Decision Variables
-
-### Binary Variables
-- Determines which product is blended during each time slot
-
-### Continuous Variables
-- Component flow to blender
-- Product output volume
-- Inventory levels at end of time slot
+- \( c_i \) = cost per unit of component \( i \)  
+- \( p_j \) = selling price of product \( j \)  
+- \( a_{ij} \) = proportion of component \( i \) in product \( j \)  
+- \( D_j \) = demand for product \( j \)  
+- \( U_i \) = available supply of component \( i \)
 
 ---
 
-## 🎯 Objective Function
+# 2️⃣ Decision Variables
 
-Maximize:
+\[
+x_{ij} = \text{Quantity of component } i \text{ used in product } j
+\]
 
-
-This drives optimal blending schedules and resource allocation.
-
----
-
-## 📏 Core Constraints
-
-### 1️⃣ Assignment Constraints
-- Only one product per blender per time slot
-
-### 2️⃣ Product Composition Constraints
-- Each product must meet recipe specifications
-
-### 3️⃣ Concentration Limits
-- Quality properties (e.g., sulfur %, viscosity) must remain within bounds
-
-### 4️⃣ Flow Rate Constraints
-- Minimum and maximum blending flow limits
-
-### 5️⃣ Material Balance
-- Inventory tracking for components and products
-
-### 6️⃣ Storage Capacity
-- Tank capacity limitations
-
-### 7️⃣ Demand Satisfaction
-- Meet total product demand across horizon
+\[
+y_j = \text{Total quantity of product } j \text{ produced}
+\]
 
 ---
 
-## 📊 System Flow Structure
+# 3️⃣ Objective Function
 
-### Inputs
-- Component availability
-- Component properties
-- Component costs
-- Product recipes
-- Product demand
-- Blender capacity
+Maximize net profit:
 
-### Optimization Engine
-- Linear Programming model
-- Constraint evaluation
-- Profit maximization
-
-### Outputs
-- Optimal blending schedule
-- Component usage plan
-- Product production volumes
-- Inventory levels
-- Maximum achievable profit
+\[
+\max \sum_{j \in J} p_j y_j - \sum_{i \in I} c_i \sum_{j \in J} x_{ij}
+\]
 
 ---
 
-## 💡 Why Linear Programming Works Well
+# 4️⃣ Material Balance Constraint
 
-- Handles multiple products simultaneously
-- Efficient for large-scale problems
-- Transparent constraint structure
-- Fast solution time using solvers like:
-  - Gurobi
-  - CPLEX
-  - PuLP
-  - OR-Tools
+\[
+\sum_{j \in J} x_{ij} \le U_i
+\quad \forall i \in I
+\]
+
+Cannot exceed component supply.
 
 ---
 
-## 📈 Business Impact
+# 5️⃣ Product Composition Constraint
 
-Optimization enables:
+\[
+\sum_{i \in I} x_{ij} = y_j
+\quad \forall j \in J
+\]
 
-- Lower raw material waste
-- Improved profit margins
-- Efficient tank utilization
-- Better demand alignment
-- Reduced manual planning errors
+Ensures components sum to product volume.
 
 ---
 
-## 🏁 Conclusion
+# 6️⃣ Quality Constraint
 
-Blending optimization transforms complex industrial operations into structured mathematical problems. By applying Linear Programming, companies can systematically maximize profitability while maintaining operational and quality constraints.
+If component property \( q_i \) affects product quality:
 
-In resource-intensive industries, optimization is no longer optional — it is a competitive necessity.
+\[
+L_j \le
+\frac{\sum_{i} q_i x_{ij}}{y_j}
+\le U_j
+\]
+
+Linearized as:
+
+\[
+L_j y_j \le \sum_{i} q_i x_{ij} \le U_j y_j
+\]
+
+Maintains specification bounds.
+
+---
+
+# 7️⃣ Demand Constraint
+
+\[
+y_j \le D_j
+\quad \forall j
+\]
+
+---
+
+# 8️⃣ Storage Capacity Constraint (Optional)
+
+\[
+\sum_{j} y_j \le C
+\]
+
+Where \( C \) = total storage capacity.
+
+---
+
+# 9️⃣ Multi-Period Extension
+
+Inventory balance:
+
+\[
+I_{it} = I_{i,t-1} + S_{it} - \sum_{j} x_{ijt}
+\]
+
+Where:
+
+- \( S_{it} \) = supply arrival  
+- \( I_{it} \) = inventory level  
+
+---
+
+# 🔟 Full Linear Programming Model
+
+\[
+\max \sum_{j} p_j y_j - \sum_{i,j} c_i x_{ij}
+\]
+
+Subject to:
+
+- Supply limits  
+- Composition balance  
+- Quality constraints  
+- Demand limits  
+
+\[
+x_{ij} \ge 0, \quad y_j \ge 0
+\]
+
+---
+
+# 🚀 Business Impact
+
+Blending optimization enables:
+
+- Higher margin through optimal mix  
+- Reduced raw material waste  
+- Consistent product quality  
+- Improved tank utilization  
+- Demand-aligned production  
+
+---
+
+# 🧠 Why Linear Programming Works
+
+Blending problems are naturally linear because:
+
+- Costs scale proportionally  
+- Properties are additive  
+- Flow constraints are linear  
+
+Thus LP solvers (Gurobi, CPLEX, OR-Tools) efficiently solve large-scale industrial blending problems.
+
+---
+
+# 🏁 Conclusion
+
+Blending optimization converts complex production decisions into a structured linear programming framework.
+
+It allows firms to systematically:
+
+- Maximize profitability  
+- Maintain quality  
+- Respect operational limits  
+
+Optimization transforms product mixing from art into mathematical precision.
