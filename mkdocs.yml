@@ -22,6 +22,12 @@ nav:
   
   - Supply Chain Case Studies:
       - Warehouse Order Optimization: case-studies/warehouse_opt.md
+      - Petro-chemical products mix: case-studies/blending_opt.md
+      - Airline Crew Scheduling: case-studies/crew_scheduling.md
+      - Inventory optimization: case-studies/inv_opt.md
+      - Construction equipment schduling: case-studies/construction_opt.md
+      - Packaging process optimization: case-studies/packaging_opt.md
+
 
   - Logistics & Food:
       - Driver's License: dmv-license.md
@@ -39,6 +45,11 @@ markdown_extensions:
   - footnotes
   - def_list
   - attr_list
+  - pymdownx.arithmatex:
+    generic: true
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 plugins:
   - search
