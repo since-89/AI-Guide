@@ -21,7 +21,7 @@ nav:
       - About: portfolio.md
       - Supply Chain Case Studies:
       - Overview: case-studies/index.md
-      - Optimizing Inventory Costs: case-studies/inventory-optimization.md
+      - Warehouse order optimization: case-studies/warehouse-opt.md
       - Reducing Lead Time Variability: case-studies/lead-time.md
       - Airline Crew Utilization Model: case-studies/crew-optimization.md
 
