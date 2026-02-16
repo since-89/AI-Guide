@@ -19,9 +19,9 @@ nav:
       - Home: index.md
       - EAD (Work Authorization): ead.md
       - About: portfolio.md
-      - Supply Chain Case Studies:
-      - Overview: case-studies/index.md
-      - Warehouse order optimization: case-studies/warehouse_opt.md
+  
+  - Supply Chain Case Studies:
+      - Warehouse Order Optimization: case-studies/warehouse_opt.md
 
   - Logistics & Food:
       - Driver's License: dmv-license.md
