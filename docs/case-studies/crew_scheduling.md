@@ -267,6 +267,36 @@ Crew scheduling thus transitions from manual planning to formal network optimiza
 
 ---
 
+# 8️⃣ Sample Results
+
+This section of the write-up explains how optimization is beneficial in solving the crew scheduling problem. It also presents an overview of the conceptual model that provides a global lens on the problem space, the required data structures, and the solution engine that ultimately generates the optimized schedule.
+To understand the charts shown later, it is essential to first understand how the inputs flow through the optimization pipeline. Crew scheduling is not a matter of manually assigning flights—it is a structured computational process that evaluates thousands of constraints, regulatory rules, and pairing patterns before producing a feasible and cost-efficient roster.
+The optimization journey begins with the two foundational datasets:
+Flight Schedule (times, routes, aircraft assignments).
+Crew Profiles (bases, qualifications, duty limits, fatigue rules, priority preferences).
+These datasets collectively describe the operational environment: which flights must be covered, which crew members are eligible, and what legal or contractual boundaries must be respected.
+Regulatory rules—duty/rest requirements, fatigue management standards, maximum hour limits—are then layered onto these data inputs. These rules shape a feasibility sequence, which determines which flights can legally connect, which duties can be constructed, and which pairings are possible.
+Only after feasibility is established does the optimization engine begin solving. Your conceptual model captures this clearly:
+ Data inputs → Feasibility generation → Optimization core → Operational outputs.
+Within the optimization engine, several tightly integrated modules evaluate millions of potential combinations:
+Flight Scheduling – ensuring every flight has the correct mix of qualified crew
+Crew Pairing – building multi-day legal duty sequences
+Crew Rostering – assigning pairings to individual crew members while balancing cost, utilization, fairness, and limits
+The solver navigates this enormous combinatorial landscape to produce the most efficient roster that satisfies all rules and minimizes operational cost.
+The result of this process is distilled into two essential output structures:
+Assignment Matrix – a structured representation showing which crew member operates which flight and when (used to create the Gantt-style duty charts)
+Co-occurrence Sequence – a relational matrix showing how frequently crew members operate together (used for the co-flight heatmap)
+Following are some of the standard outputs from the constraint satisfaction solution approach.
+
+
+![Sample Crew Assignment adhering to stricter assignment rules.](../assets/crew_assign.png)
+
+The Gantt chart offers a timeline-like snapshot of how individual crew members are deployed across the day. Each bar captures a flight that a crew member is assigned to, showing when their duty begins and ends. When seen together, these bars form a visual story of the roster: who is flying, when they are on duty, and how their workday is structured.
+One of the immediate observations from the chart is how the model naturally spaces out the duties to avoid overlapping assignments. Crew with tightly packed segments reflect higher utilization, while those with longer gaps indicate potential inefficiencies or reserve periods. As you scan across the chart, patterns emerge—some crew have smoother sequences of flights, while others have fragmented duties, revealing opportunities for improving continuity in pairings. Overall, this chart helps validate the feasibility of the schedule and gives a real sense of how the crew day actually unfolds.
+
+
+---
+
 # 🏁 Conclusion
 
 Crew scheduling is fundamentally a binary assignment optimization problem with complex temporal, regulatory, and qualification constraints.
