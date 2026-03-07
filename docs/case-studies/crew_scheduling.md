@@ -273,13 +273,17 @@ Crew scheduling thus transitions from manual planning to formal network optimiza
 
 This section of the write-up explains how optimization is beneficial in solving the crew scheduling problem. It also presents an overview of the conceptual model that provides a global lens on the problem space, the required data structures, and the solution engine that ultimately generates the optimized schedule.
 
+
 To understand the charts shown later, it is essential to first understand how the inputs flow through the optimization pipeline. Crew scheduling is not a matter of manually assigning flights—it is a structured computational process that evaluates thousands of constraints, regulatory rules, and pairing patterns before producing a feasible and cost-efficient roster.
+
 
 The optimization journey begins with the two foundational datasets:
 Flight Schedule (times, routes, aircraft assignments).
 Crew Profiles (bases, qualifications, duty limits, fatigue rules, priority preferences). These datasets collectively describe the operational environment: which flights must be covered, which crew members are eligible, and what legal or contractual boundaries must be respected.
 
+
 Regulatory rules—duty/rest requirements, fatigue management standards, maximum hour limits—are then layered onto these data inputs. These rules shape a feasibility sequence, which determines which flights can legally connect, which duties can be constructed, and which pairings are possible. 
+
 
 Only after feasibility is established does the optimization engine begin solving. Your conceptual model captures this clearly:
  Data inputs → Feasibility generation → Optimization core → Operational outputs.
