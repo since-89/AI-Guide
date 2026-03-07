@@ -269,13 +269,18 @@ Crew scheduling thus transitions from manual planning to formal network optimiza
 
 # 8️⃣ Sample Results
 
+<div style="text-align: justify;">
+
 This section of the write-up explains how optimization is beneficial in solving the crew scheduling problem. It also presents an overview of the conceptual model that provides a global lens on the problem space, the required data structures, and the solution engine that ultimately generates the optimized schedule.
+
 To understand the charts shown later, it is essential to first understand how the inputs flow through the optimization pipeline. Crew scheduling is not a matter of manually assigning flights—it is a structured computational process that evaluates thousands of constraints, regulatory rules, and pairing patterns before producing a feasible and cost-efficient roster.
+
 The optimization journey begins with the two foundational datasets:
 Flight Schedule (times, routes, aircraft assignments).
-Crew Profiles (bases, qualifications, duty limits, fatigue rules, priority preferences).
-These datasets collectively describe the operational environment: which flights must be covered, which crew members are eligible, and what legal or contractual boundaries must be respected.
-Regulatory rules—duty/rest requirements, fatigue management standards, maximum hour limits—are then layered onto these data inputs. These rules shape a feasibility sequence, which determines which flights can legally connect, which duties can be constructed, and which pairings are possible.
+Crew Profiles (bases, qualifications, duty limits, fatigue rules, priority preferences). These datasets collectively describe the operational environment: which flights must be covered, which crew members are eligible, and what legal or contractual boundaries must be respected.
+
+Regulatory rules—duty/rest requirements, fatigue management standards, maximum hour limits—are then layered onto these data inputs. These rules shape a feasibility sequence, which determines which flights can legally connect, which duties can be constructed, and which pairings are possible. 
+
 Only after feasibility is established does the optimization engine begin solving. Your conceptual model captures this clearly:
  Data inputs → Feasibility generation → Optimization core → Operational outputs.
 Within the optimization engine, several tightly integrated modules evaluate millions of potential combinations:
@@ -285,14 +290,29 @@ Crew Rostering – assigning pairings to individual crew members while balancing
 The solver navigates this enormous combinatorial landscape to produce the most efficient roster that satisfies all rules and minimizes operational cost.
 The result of this process is distilled into two essential output structures:
 Assignment Matrix – a structured representation showing which crew member operates which flight and when (used to create the Gantt-style duty charts)
-Co-occurrence Sequence – a relational matrix showing how frequently crew members operate together (used for the co-flight heatmap)
-Following are some of the standard outputs from the constraint satisfaction solution approach.
+Co-occurrence Sequence – a relational matrix showing how frequently crew members operate together (used for the co-flight heatmap). Following are some of the standard outputs from the constraint satisfaction solution approach.
 
 
 ![Sample Crew Assignment adhering to stricter assignment rules.](../assets/crew_assign.png)
 
 The Gantt chart offers a timeline-like snapshot of how individual crew members are deployed across the day. Each bar captures a flight that a crew member is assigned to, showing when their duty begins and ends. When seen together, these bars form a visual story of the roster: who is flying, when they are on duty, and how their workday is structured.
+
 One of the immediate observations from the chart is how the model naturally spaces out the duties to avoid overlapping assignments. Crew with tightly packed segments reflect higher utilization, while those with longer gaps indicate potential inefficiencies or reserve periods. As you scan across the chart, patterns emerge—some crew have smoother sequences of flights, while others have fragmented duties, revealing opportunities for improving continuity in pairings. Overall, this chart helps validate the feasibility of the schedule and gives a real sense of how the crew day actually unfolds.
+
+</div>
+
+
+![Crew Assignment by Base Logic implementation for the same set of flights as per Figure 1.](../assets/crew_assing_base.png)
+
+When we reorganize the same assignments by crew base, the picture changes from an individual timeline to a broader operational perspective. This chart shows how each home base contributes to the overall schedule and whether the workload is distributed evenly across the network.
+From the visual, certain bases appear significantly busier than others. Some bases show dense clusters of duties—suggesting higher operational pressure—while others display lighter patterns, indicating underutilized resources. These disparities are important because they often translate into avoidable costs: excess standby time, unnecessary deadheads, or misalignment between where crew are stationed and where flights actually originate.
+This chart essentially tells a story of balance—and imbalance—within the airline’s crew deployment strategy. It highlights why optimization is needed not just at the individual level, but across the entire base structure.
+
+![Crew Assignment by Base Logic implementation for the same set of flights as per Figure 1.](../assets/milp_output.png)
+
+The co-flight matrix visualizes how often two crew members have flown together in the optimized roster. Each cell represents a pairing frequency, and the shading reveals patterns in collaboration across the crew network.
+What stands out in this chart is the natural clustering created by duty construction: some pairs appear together frequently because their flight sequences align closely, while others barely intersect at all. In a real-world setting, this matters for multiple reasons. Repeated pairings might indicate stable operational patterns, but they may also hint at unwanted dependency or lack of rotation across teams. Conversely, boxes with zeros show crew who never interact, which could reflect either distributed scheduling or missed opportunities for balanced workload distribution.
+
 
 
 ---
